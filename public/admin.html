@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Admin Chat</h2>
+    <div id="messages"></div>
+    <input id="reply-to" type="text" placeholder="Enter client username" />
+    <input id="admin-reply" type="text" placeholder="Type a reply..." />
+    <button id="send-reply">Send Reply</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
