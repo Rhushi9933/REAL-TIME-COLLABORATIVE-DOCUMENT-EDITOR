@@ -135,9 +135,86 @@ While this project provides a strong foundation, several features can be added:
   • Version History: Track previous document changes.
 ________________________________________
 Conclusion
+
 This real-time collaborative document editor demonstrates the power of WebSockets, React.js, Node.js, and MongoDB in building modern web applications. By combining real-time updates, persistence, and a simple UI, this project serves as a great starting point for building a full-fledged online document collaboration tool.
 
 This project can be expanded into a professional-grade tool for companies, students, or teams needing private, real-time document collaboration without relying on third-party services.
+________________________________________
+Steps to Run the Collaborative Document Editor
+
+Follow these steps to set up and run the real-time collaborative document editor on your local machine.
+
+Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+  • Node.js (Download: https://nodejs.org/)
+
+  • MongoDB (Download: https://www.mongodb.com/try/download/community)
+
+
+1. Makw the project directory:
+
+        cd REAL-TIME-COLLABORATIVE-DOCUMENT-EDITOR
+
+2. Set Up the Backend
+
+Navigate to the backend folder:
+
+    cd backend
+
+Install dependencies:
+
+    npm init -y
+    npm install express socket.io mongoose cors dotenv
+    npm install --save-dev nodemon
+
+
+Create a .env file in the backend folder and add your MongoDB connection string:
+
+    echo > .env
+    MONGO_URI=mongodb://127.0.0.1:27017/collab-docs
+
+Start MongoDB (if it’s not running):
+
+    net start MongoDB
+
+Start the backend server:
+
+    npm run dev
+
+You should see:
+
+    MongoDB Connected
+    Server running on port 5000
+
+3. Set Up the Frontend
+
+Open a new terminal and navigate to the frontend folder:
+
+    cd ../frontend
+
+Install dependencies:
+
+    npx create-react-app frontend
+    npm install socket.io-client uuid
+
+Start the React app:
+
+    npm start
+
+This will open http://localhost:3000 in your default browser.
+
+4. Test Real-Time Collaboration
+
+Open the app normally:
+
+    http://localhost:3000
+    
+Open another instance in an Incognito Window (Ctrl + Shift + N).
+
+Type in one window, and it should automatically update in the other window in real time! 🎉
+
 ________________________________________
 *Output:*
 ![Image](https://github.com/user-attachments/assets/b25a7cd6-098d-4d14-afd0-a2927a167dd4)
