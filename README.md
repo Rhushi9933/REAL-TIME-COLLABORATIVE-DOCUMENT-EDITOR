@@ -138,3 +138,8 @@ Conclusion
 This real-time collaborative document editor demonstrates the power of WebSockets, React.js, Node.js, and MongoDB in building modern web applications. By combining real-time updates, persistence, and a simple UI, this project serves as a great starting point for building a full-fledged online document collaboration tool.
 
 This project can be expanded into a professional-grade tool for companies, students, or teams needing private, real-time document collaboration without relying on third-party services.
+________________________________________
+*Output:*
+![Image](https://github.com/user-attachments/assets/b25a7cd6-098d-4d14-afd0-a2927a167dd4)
+
+![Image](https://github.com/user-attachments/assets/37a67d64-0bf8-4d38-bd99-54d18699463f)
